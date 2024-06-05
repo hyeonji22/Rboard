@@ -1,0 +1,18 @@
+{
+    "board":[
+        {
+            "id":1,
+            "title":"공지사항입니다.",
+            "content":"내용 공지사항입니다.",
+            "create_date":"2024-06-23",
+            "update_date":null
+        },
+        {
+            "id":2,
+            "title":"공지사항입니다2.",
+            "content":"내용 공지사항입니다2.",
+            "create_date":"2024-06-25",
+            "update_date":null
+        }
+    ]
+}
