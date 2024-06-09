@@ -1,20 +1,21 @@
 import React from 'react';
 import './App.css';
-import Layouts from './component/layouts/Layouts';
-import 'bootstrap/dist/css/bootstrap.min.css'; //부트스트랩 사용
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
-import BoardList from './pages/BoardList';
-import BoardDetail from './pages/BoardDetail';
-
+import BoardList from './component/pages/BoardList';
+import Layout from './component/layout/Layout';
+import BoardDetail from './component/pages/BoardDetail';
 
 function App() {
   return (
-    <Layouts>
-     <Routes>
-        <Route path='/'  element={<BoardList/>}></Route>
-        <Route path='/board/:id'  element={<BoardDetail/>}></Route>
-     </Routes>
-    </Layouts>
+    <div className="App">
+      <Layout>
+      <Routes>
+        <Route path='/'  element={<BoardList />}></Route>
+        <Route path='/board/:id'  element={<BoardDetail />}></Route>
+      </Routes>
+      </Layout>
+    </div>
   );
 }
 
